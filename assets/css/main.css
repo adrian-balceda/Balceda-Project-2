@@ -2256,3 +2256,11 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Mission and Vision card borders */
+#mission-vision .member {
+  width: 100%;
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
