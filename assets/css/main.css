@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap");
+
 /**
 * Template Name: Mentor
 * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
@@ -12,25 +14,25 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --heading-font: "Playfair Display", Georgia, serif;
+  --nav-font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #37423b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #5fcf80; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --background-color: #fffdf7;
+  --default-color: #33405f;
+  --heading-color: #1a237e;
+  --accent-color: #d4a017;
+  --surface-color: #ffffff;
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #272828;  /* The default color of the main navmenu links */
-  --nav-hover-color: #5fcf80; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #1a237e;
+  --nav-hover-color: #b8860b;
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #272828; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -40,7 +42,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f9f9f9;
+  --background-color: #f4eede;
   --surface-color: #ffffff;
 }
 
@@ -224,7 +226,8 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
+  padding: 12px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--heading-color), transparent 88%);
   transition: all 0.5s;
   z-index: 997;
 }
@@ -240,16 +243,16 @@ h6 {
 
 .header .logo h1 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   margin: 0;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--accent-color);
+  letter-spacing: 0.2px;
+  text-transform: none;
+  color: var(--heading-color);
 }
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-  color: var(--contrast-color);
+  color: var(--heading-color);
   background: var(--accent-color);
   font-size: 14px;
   padding: 8px 25px;
@@ -894,7 +897,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 60%);
+  background: linear-gradient(90deg, rgba(10, 17, 48, 0.88) 0%, rgba(26, 35,126, 0.62) 55%, rgba(26, 35,126, 0.18) 100%);
   position: absolute;
   inset: 0;
   z-index: 2;
