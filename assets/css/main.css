@@ -1095,6 +1095,15 @@ section,
   transition: 0.3s;
 }
 
+.why-us .icon-box .pillar-number {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: -18px 0 12px;
+}
+
 .why-us .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
